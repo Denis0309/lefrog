@@ -1,0 +1,62 @@
+@import "base.less";
+@import "catalogue.less";
+
+.search_results {
+    .result {
+        display: table;
+        margin-bottom: 15px;
+    }
+    .thumb,
+    .body {
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+    }
+    .thumb {
+        width: 151px;
+        padding-right: 12px;
+        a, img {
+            display: block;
+            width: 150px;
+            height: 150px;
+        }
+        img {
+            border: 1px solid #FFFFFF;
+        }
+    }
+    .body {
+        position: relative;
+        padding-bottom: 45px;
+    }
+    .title {
+        padding-bottom: 12px;
+        .font(20px, 1.2em);
+        font-family: Tahoma, Arial, sans-serif;
+        a {
+            text-decoration: none;
+            color: @dark_color;
+        }
+    }
+    .text {
+        width: 370px;
+        font-family: Tahoma, Arial, sans-serif;
+        color: @light_color;
+    }
+    .more {
+        display: inline-block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        min-height: 21px;
+        padding-top: 2px;
+        padding-right: 33px;
+        .font(15px, 1.2em);
+        text-decoration: none;
+        text-transform: uppercase;
+        color: @dark_color;
+        background: url(../img/contact_icons.png) 100% 0px no-repeat;
+    }
+    .match {
+        color: @green_color !important;
+    }
+}

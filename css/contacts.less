@@ -1,0 +1,113 @@
+@import "base.less";
+
+.contacts {
+    .caption {
+        padding-bottom: 20px;
+        .font(16px, 1.2em);
+        text-transform: uppercase;
+        color: @dark_color;
+    }
+    .contacts_info {
+        float: left;
+        width: 260px;
+        margin-right: 40px;
+        padding-right: 20px;
+        border-right: 1px solid #CCCCCC;
+        .value {
+            padding-bottom: 35px;
+            .font(16px, 1.6em);
+        }
+        .address {
+            .font(14px, 1.6em);
+        }
+        .email {
+            a {
+                text-decoration: underline;
+                color: @dark_color;
+            }
+            a:hover {
+                text-decoration: none;
+            }
+        }
+        .socials {
+            .content_block > .contact_info_block > .social_links;
+            padding-bottom: 6px;
+            a {
+                margin: 0px 5px;
+            }
+            a:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+    .additional_info {
+        display: table;
+        margin-bottom: 34px;
+        vertical-align: top;
+        text-align: left;
+        .caption {
+            font-weight: bold;
+        }
+        .map_block {
+            display: table-cell;
+            width: 292px;
+            padding-right: 17px;
+        }
+        .map {
+            width: 290px;
+            height: 120px;
+            border: 1px solid #CCCCCC;
+        }
+        .description_block {
+            display: table-cell;
+            .font(15px, 1.5em);
+            color: @placeholder_color;
+        }
+    }
+    .contacts_form {
+        .caption {
+            font-weight: bold;
+        }
+        .form_block {
+            display: table;
+            float: left;
+            width: 292px;
+        }
+        .row {
+            display: table-row;
+        }
+        .labels,
+        .fields {
+            display: table-cell;
+            padding-bottom: 10px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        .labels {
+            padding-right: 10px;
+        }
+        .fields {
+            width: 225px;
+            padding-right: 17px;
+        }
+        .inputs {
+            width: 203px;
+            height: 38px;
+            border: 1px solid #CCCCCC;
+        }
+        .message {
+            .textareas {
+                width: 738px;
+                height: 128px;
+                border: 1px solid #CCCCCC;
+            }
+        }
+        .submit {
+            padding-top: 7px;
+            text-align: right;
+        }
+        .buttons {
+            border: 1px solid @dark_grey_color;
+        }
+    }
+}

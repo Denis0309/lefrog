@@ -1,0 +1,154 @@
+@import "base.less";
+@import "carousel.less";
+
+.club {
+    .main_column {
+        margin-left: 0px;
+        margin-right: 406px;
+    }
+    .top_article {
+        padding-bottom: 10px;
+        .body {
+            border: 1px solid #BFC2D0;
+        }
+        .caption {
+            height: 22px;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            .font(19px, 1.2em);
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 1px solid #BFC2D0;
+        }
+        .thumb {
+            display: block;
+            height: 450px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .info {
+            position: relative;
+            padding: 11px 17px;
+        }
+        .title {
+            padding-bottom: 8px;
+            .font(20px, 1.2em);
+            font-weight: normal;
+            text-transform: uppercase;
+            a {
+                text-decoration: none;
+                color: @dark_color;
+            }
+        }
+        .additional_info {
+            color: @light_grey_color;
+            .date {
+                display: inline-block;
+                margin-right: 15px;
+                padding-left: 16px;
+                background: url(../img/article_icons.png) 0px 2.5px no-repeat;
+            }
+            .comments {
+                display: inline-block;
+                padding-left: 16px;
+                background: url(../img/article_icons.png) 0px -17px no-repeat;
+            }
+        }
+        .read_more {
+            display: inline-block;
+            position: absolute;
+            bottom: 9px;
+            right: 14px;
+            min-height: 20px;
+            padding-top: 3px;
+            padding-right: 33px;
+            font-size: 15px;
+            line-height: 1.2em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: @dark_color;
+            background: url(../img/contact_icons.png) 100% 0 no-repeat;
+        }
+    }
+    .article {
+        margin-bottom: 10px;
+        border: 1px solid #BFC2D0;
+        .thumb {
+            .top_article > .thumb;
+            height: 450px;
+        }
+        .info {
+            .top_article > .info;
+        }
+        .additional_info {
+            .top_article > .additional_info;
+        }
+        .title {
+            .top_article > .title;
+        }
+        .read_more {
+            .top_article > .read_more;
+        }
+    }
+    .show_more  {
+        display: block;
+        height: 25px;
+        padding-top: 7px;
+        .font(16px, 1.2em);
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        color: @dark_color;
+        background: #F1F1F1 none;
+    }
+    .right_column {
+        float: right;
+        width: 380px;
+        padding-top: 27px;
+        .bun_ner_block {
+            width: 380px;
+            margin-bottom: 15px;
+        }
+    }
+    .article_block {
+        .title {
+            .top_article > .caption;
+        }
+        .body {
+            border: 1px solid #BFC2D0;
+        }
+        .article_image {
+            margin-bottom: 22px;
+            img {
+                display: block;
+            }
+        }
+        .description {
+            padding: 0px 15px;
+            .font(15px, 1.5em);
+            ul {
+                list-style: square;
+                margin-bottom: 15px;
+            }
+            .info {
+                .top_article > .additional_info;
+                padding-bottom: 15px;
+                .font(13px, 1.2em);
+                color: @light_grey_color;
+            }
+        }
+        .social_buttons {
+            height: 52px;
+            margin-top: -1px;
+            padding: 0px 15px;
+            border: 1px solid #D1D3DE;
+            .button {
+                margin-top: 20px;
+                margin-right: 10px;
+                text-align: left;
+                vertical-align: top;
+            }
+        }
+    }
+}

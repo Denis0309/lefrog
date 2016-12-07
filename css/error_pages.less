@@ -1,0 +1,44 @@
+@import "base.less";
+
+.error_block {
+    display: table;
+    width: 898px;
+    margin: 0px auto 0px auto;
+    border: 1px solid #8C92AB;
+    .error_image,
+    .error_text {
+        text-align: center;
+        vertical-align: middle;
+    }
+    .error_image {
+        display: table-cell;
+        width: 362px;
+        height: 542px;
+        img {
+            display: block;
+            width: inherit;
+            height: inherit;
+        }
+    }
+    .error_text {
+        display: table-cell;
+    }
+    .caption {
+        margin-bottom: 27px;
+        .font(46px, 1.2em);
+        font-weight: bold;
+    }
+    .description {
+        margin-bottom: 90px;
+        .font(30px, 1.3em);
+    }
+    .to_home {
+        display: inline-block;
+        height: 20px;
+        padding: 3px 30px 0px 0px;
+        .font(16px, 1.2em);
+        text-transform: uppercase;
+        color: @dark_color;
+        background: url(../img/contact_icons.png) 100% 0px no-repeat;
+    }
+}

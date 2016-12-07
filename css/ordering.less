@@ -1,0 +1,278 @@
+@import "base.less";
+
+.ordering_block {
+    .form_block {
+        width: 560px;
+        margin: 0px auto;
+    }
+    .inputs {
+        height: 36px;
+        border: 1px solid #CCCCCC;
+    }
+    .small_fields {
+        display: table;
+        table-layout: fixed;
+        text-align: left;
+        vertical-align: top;
+        .fields {
+            display: table-cell;
+            padding-left: 10px;
+        }
+        .fields:first-child {
+            padding-left: 0px;
+        }
+        .inputs {
+            width: 158px;
+            margin-bottom: 10px;
+        }
+        .selects {
+            width: 180px;
+            height: 38px;
+            border: 1px solid #CCCCCC;
+            margin-bottom: 10px;
+        }
+        .select2-chosen {
+            margin-top: 2px;
+        }
+        .select2-arrow {
+            margin-top: 2px;
+        }
+    }
+    .address {
+        .inputs {
+            width: 538px;
+            margin-bottom: 10px;
+        }
+    }
+    .additional_info {
+        .textareas {
+            width: 538px;
+            height: 98px;
+            padding: 5px 10px;
+            border: 1px solid #CCCCCC;
+        }
+    }
+    .actions_row {
+        padding-top: 20px;
+        .agree_check {
+            display: block;
+            float: left;
+            position: relative;
+            width: 280px;
+            min-height: 20px;
+            margin-top: 10px;
+            .font(15px, 1.2em);
+            .label {
+                cursor: pointer;
+                display: inline-block;
+                min-height: 20px;
+                padding-top: 1px;
+            }
+            label:hover {
+                color: @dark_color;
+            }
+            .selected {
+                color: @green_color !important;
+            }
+            .ez-hide {
+                cursor: pointer;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+            .ez-checkbox {
+                zoom: 1;
+                cursor: pointer;
+                display: block;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                background: transparent url('../img/catalogue_aside_icons.png') -21px -23px no-repeat;
+            }
+            .ez-checked {
+                background-position: 0px -23px;
+            }
+            .ez-selected {
+                background-position: 0px -23px;
+            }
+        }
+        .buttons {
+            display: block;
+            float: right;
+            border: 1px solid #8D93AB;
+        }
+    }
+}
+
+.order_block {
+    min-height: 300px;
+    .order_caption {
+        .font(19px, 1.2em);
+        padding-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        .date {
+            .font(15px, 1.2em);
+        }
+    }
+    .order_table {
+        display: table;
+        min-width: 965px;
+        margin: 0px auto;
+        border: 1px solid #BFC2D0;
+    }
+    .main_info,
+    .products_list {
+        display: table-cell;
+        text-align: left;
+        vertical-align: top;
+        .caption {
+            height: 29px;
+            padding-top: 11px;
+            padding-left: 23px;
+            .font(16px, 1.2em);
+            text-transform: uppercase;
+            text-align: left;
+            border-bottom: 1px solid #BFC2D0;
+        }
+    }
+    .main_info {
+        width: 482px;
+        padding-bottom: 20px;
+        .font(15px, 1.2em);
+        border-right: 1px solid #BFC2D0;
+        .caption {
+            margin-bottom: 20px;
+        }
+        .info_row {
+            display: table;
+            margin: 0px 23px 9px 23px;
+            padding: 0px;
+            .label,
+            .value {
+                display: table-cell;
+            }
+            .label {
+                width: 180px;
+                padding-right: 10px;
+                font-family: Tahoma, Arial, sans-serif;
+            }
+            .value {
+                width: 190px;
+            }
+        }
+    }
+    .products_list {
+        .product {
+            display: table;
+            width: 100%;
+            padding: 20px 0px 0px 0px;
+            .font(15px, 1.2em);
+            font-family: Tahoma, Arial, sans-serif;
+            border-bottom: 1px solid #BFC2D0;
+        }
+        .product_info {
+            display: table;
+            width: 100%;
+        }
+        .namber,
+        .body {
+            display: table-cell;
+        }
+        .number {
+            width: 40px;
+            padding-right: 5px;
+            text-align: right;
+        }
+        .product_name {
+            padding-bottom: 10px;
+            a {
+                text-decoration: none;
+                color: @dark_color;
+            }
+        }
+        .info_table {
+            display: table;
+            width: 100%;
+            .cell {
+                display: table-cell;
+                padding-right: 20px;
+            }
+            .cell:first-child {
+                width: 230px;
+                padding-right: 20px;
+            }
+        }
+        .info_row {
+            padding-bottom: 10px;
+            .label {
+                padding-right: 3px;
+                color: @light_color;
+            }
+        }
+        .total_info {
+            display: table;
+            width: 100%;
+            margin-top: 5px;
+            .count,
+            .total_price {
+                display: table-cell;
+                height: 29px;
+                padding-top: 7px;
+                padding-right: 20px;
+                border-top: 1px solid #BFC2D0;
+                background: #ECECFB none;
+            }
+            .count {
+                width: 230px;
+                padding-left: 45px;
+            }
+            .label {
+                padding-right: 7px;
+            }
+        }
+    }
+    .total_amount {
+        height: 33px;
+        padding-top: 12px;
+        .font(19px, 1.2em);
+        text-transform: uppercase;
+        text-align: center;
+        b {
+            padding-left: 15px;
+            text-transform: none;
+        }
+    }
+    .submit {
+        padding: 30px 0px 10px;
+        text-align: center;
+        .buttons {
+            height: 46px;
+            padding: 0px 30px;
+            .font(19px, 1.2em);
+            color: @white_color;
+            background: #A0C929 none;
+        }
+        .cancel {
+            display: inline-block;
+            width: 85px;
+            margin-right: -115px;
+            margin-left: 30px;
+            .font(16px, 1.2em);
+        }
+    }
+}
+
+.thanks_block {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    .font(1.2em, 1.2em);
+    text-align: center;
+    .caption {
+        padding-bottom: 15px;
+        .font(19px, 1.2em);
+        font-weight: bold;
+    }
+}
